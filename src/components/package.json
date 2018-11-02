@@ -1,0 +1,11 @@
+{
+	"name": "@hivemc/components",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "Roman Sultanov (SZ)",
+	"dependencies": {
+		"node-sass": "4.9.4",
+		"prop-types": "15.6.2"
+	},
+	"license": "MIT"
+}
