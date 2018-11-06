@@ -1,6 +1,7 @@
 {
 	"name": "hivemc-react",
 	"version": "1.0.0",
+	"private": true,
 	"homepage": "https://romansultanov.ru/works/hivemc/",
 	"description": "Simple web-application for viewing statistics on server The Hive",
 	"author": "Roman Sultanov (SZ)",
@@ -9,7 +10,7 @@
 		"src/components"
 	],
 	"dependencies": {
-		"node-sass": "^4.9.4",
+		"node-sass": "^4.10.0",
 		"react": "^16.6.0",
 		"react-dom": "^16.6.0",
 		"react-scripts": "2.1.1",
