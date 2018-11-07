@@ -70,13 +70,42 @@ const Stats = (props) => {
 								/>
 							);
 						} else {
-							return (
-								<Item
-									key={item[0]}
-									title={Lang.en[item[0]]}
-									value={JSON.stringify(item[1], null, 5).replace(/"/g, '')}
-								/>
-							);
+							if (item[0] === 'blockExperience') {
+								const items = Object.entries(item[1]);
+								return (
+									<li key={item[0]}>
+										{items.length > 0 ? (
+											<table>
+												<tbody>
+													<tr>
+														<td><span>Block</span></td>
+														<td><span>Level</span></td>
+													</tr>
+													{items.map(item => (
+														<tr key={item[0]}>
+															<td>{Lang.en[item[0]]}</td>
+															<td>{item[1]}</td>
+														</tr>
+													))}
+												</tbody>
+											</table>
+										) : (
+											<>
+												<span>{Lang.en[item[0]]}: </span>
+												{Lang.en.nodata}
+											</>
+										)}
+									</li>
+								);
+							} else {
+								return (
+									<Item
+										key={item[0]}
+										title={Lang.en[item[0]]}
+										value={JSON.stringify(item[1], null, 5).replace(/"/g, '')}
+									/>
+								);
+							}
 						}
 					}
 				}

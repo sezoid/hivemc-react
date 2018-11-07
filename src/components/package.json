@@ -4,7 +4,8 @@
 	"main": "index.js",
 	"author": "Roman Sultanov (SZ)",
 	"dependencies": {
-		"node-sass": "4.9.4",
+		"node-sass": "4.10.0",
+		"react": "^16.6.1",
 		"prop-types": "15.6.2"
 	},
 	"license": "MIT"
